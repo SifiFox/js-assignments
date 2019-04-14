@@ -33,7 +33,13 @@
  *
  */
 function* get99BottlesOfBeer() {
-    throw new Error('Not implemented');
+    // let bottles = 99;
+    // for (let i = bottles; bottles > 0; i--) {
+    //  console.log(bottles +' bottles of beer on the wall, '+ bottles + ' bottles of beer.');
+    //   --bottles;
+    // console.log('Take one down and pass it around, ' + bottles + ' bottles of beer on the wall.');
+    // }
+    // console.log('No more bottles of beer on the wall, no more bottles of beer.');
 }
 
 
@@ -47,7 +53,12 @@ function* get99BottlesOfBeer() {
  *
  */
 function* getFibonacciSequence() {
-    throw new Error('Not implemented');
+    var n = 39;
+    var fibonacci = [0, 1]; 
+    for (let i = 2; i < n; i ++) {
+      fibonacci[i] = fibonacci[i-1] + fibonacci[i-2];
+    }  
+    console.log(fibonacci.slice(0,n));
 }
 
 
